@@ -1,0 +1,100 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  /* Animación */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Título */
+  h1 {
+    margin-bottom: 1rem;
+    color: #4a47a3;
+  }
+  
+  /* Lista de requisitos */
+  ul {
+    text-align: left;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    list-style-type: circle;
+    color: #555;
+  }
+  
+  /* Campo de entrada */
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="password"]:focus {
+    border-color: #9face6;
+    outline: none;
+  }
+  
+  /* Botón */
+  button {
+    background: #4a47a3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background: #7a78b6;
+    transform: translateY(-2px);
+  }
+  
+  /* Mensaje */
+  #message {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  #message.success {
+    color: #4caf50;
+  }
+  
+  #message.error {
+    color: #f44336;
+  }
+  
